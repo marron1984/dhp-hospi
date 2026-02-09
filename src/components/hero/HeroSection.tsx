@@ -2,6 +2,7 @@
 
 import { useEffect, useRef, useState, useCallback } from "react";
 import { useTranslations } from "next-intl";
+import Image from "next/image";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import LiquidShader from "./LiquidShader";
@@ -88,14 +89,23 @@ export default function HeroSection() {
       {/* WebGL Liquid Shader Entrance */}
       {!shaderComplete && <LiquidShader onComplete={handleShaderComplete} />}
 
-      {/* Background Layers — walnut wood warmth */}
+      {/* Background Layers — property exterior photo */}
       <div className="absolute inset-0 z-0">
-        {/* Layer 1: Deep walnut gradient */}
+        {/* Layer 0: Property exterior image */}
+        <Image
+          src="/images/photo-03.jpg"
+          alt="奈良春日 鹿のや 外観"
+          fill
+          priority
+          className="object-cover"
+          sizes="100vw"
+        />
+        {/* Layer 1: Dark overlay for text readability */}
         <div
           className="absolute inset-0"
           style={{
             background:
-              "linear-gradient(160deg, #4E3D30 0%, #3D2E22 40%, #453525 100%)",
+              "linear-gradient(160deg, rgba(78,61,48,0.75) 0%, rgba(61,46,34,0.85) 40%, rgba(69,53,37,0.8) 100%)",
           }}
         />
         {/* Layer 2: Warm gold radiance */}
@@ -111,7 +121,7 @@ export default function HeroSection() {
           className="absolute inset-0"
           style={{
             background:
-              "radial-gradient(ellipse at center, transparent 50%, rgba(61,46,34,0.7) 100%)",
+              "radial-gradient(ellipse at center, transparent 50%, rgba(61,46,34,0.5) 100%)",
           }}
         />
       </div>

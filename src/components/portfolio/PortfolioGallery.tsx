@@ -2,6 +2,7 @@
 
 import { useEffect, useRef } from "react";
 import { useTranslations } from "next-intl";
+import Image from "next/image";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 
@@ -12,31 +13,36 @@ const galleryImages = [
     id: 1,
     aspect: "portrait",
     label: "Entrance",
-    bg: "linear-gradient(135deg, #3D2E22 0%, #2C1E16 100%)",
+    src: "/images/photo-06.jpg",
+    alt: "奈良春日 鹿のや 看板",
   },
   {
     id: 2,
     aspect: "landscape",
-    label: "Guest Room",
-    bg: "linear-gradient(135deg, #3A2A1E 0%, #291C12 100%)",
+    label: "Guest Suite",
+    src: "/images/photo-01.jpg",
+    alt: "スイートルーム",
   },
   {
     id: 3,
-    aspect: "square",
-    label: "Garden",
-    bg: "linear-gradient(135deg, #352818 0%, #241A10 100%)",
+    aspect: "landscape",
+    label: "Lounge",
+    src: "/images/photo-07.jpg",
+    alt: "ロビー・ラウンジ",
   },
   {
     id: 4,
     aspect: "landscape",
     label: "Dining",
-    bg: "linear-gradient(135deg, #3E2D1F 0%, #2D1F13 100%)",
+    src: "/images/photo-05.jpg",
+    alt: "お料理",
   },
   {
     id: 5,
     aspect: "portrait",
-    label: "Onsen",
-    bg: "linear-gradient(135deg, #382614 0%, #261B0F 100%)",
+    label: "Guest Room",
+    src: "/images/photo-04.jpg",
+    alt: "客室",
   },
 ];
 
@@ -146,10 +152,12 @@ export default function PortfolioGallery() {
               data-cursor
               data-cursor-text="View"
             >
-              {/* Placeholder gradient (replace with actual images) */}
-              <div
-                className="absolute inset-0 transition-transform duration-700 group-hover:scale-105"
-                style={{ background: img.bg }}
+              <Image
+                src={img.src}
+                alt={img.alt}
+                fill
+                className="object-cover transition-transform duration-700 hover:scale-105"
+                sizes="(max-width: 768px) 50vw, 35vw"
               />
 
               {/* Image overlay info */}

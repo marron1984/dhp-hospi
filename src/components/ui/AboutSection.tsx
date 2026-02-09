@@ -2,6 +2,7 @@
 
 import { useEffect, useRef } from "react";
 import { useTranslations, useLocale } from "next-intl";
+import Image from "next/image";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import corporateData from "@/data/corporate-registry.json";
@@ -147,8 +148,20 @@ export default function AboutSection() {
             </div>
           </div>
 
-          {/* Right: Timeline + Stats */}
+          {/* Right: Photo + Timeline + Stats */}
           <div>
+            {/* Property Photo */}
+            <div className="relative mb-12 aspect-[3/2] w-full overflow-hidden">
+              <Image
+                src="/images/photo-02.jpg"
+                alt="奈良春日 鹿のや 客室"
+                fill
+                className="object-cover"
+                sizes="(max-width: 768px) 100vw, 50vw"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-walnut/40 to-transparent" />
+            </div>
+
             {/* Timeline */}
             <div ref={timelineRef} className="relative pl-8 mb-16">
               <div className="timeline-line absolute left-0 top-0 h-full w-px bg-accent" />
