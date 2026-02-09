@@ -1,14 +1,14 @@
 {
   "corporation": {
     "currentName": {
-      "ja": "dhp hospitality 株式会社",
+      "ja": "株式会社 dhp hospitality",
       "en": "dhp hospitality Inc.",
-      "zh-TW": "dhp hospitality 股份有限公司"
+      "zh-TW": "株式會社 dhp hospitality"
     },
     "formerName": {
-      "ja": "医療介護開発機構 株式会社",
+      "ja": "株式会社 医療介護開発機構",
       "en": "Medical Care Development Organization Inc.",
-      "zh-TW": "醫療介護開發機構 股份有限公司"
+      "zh-TW": "株式會社 醫療介護開發機構"
     },
     "nameChangeDate": "2025-12",
     "nameChangeNarrative": {

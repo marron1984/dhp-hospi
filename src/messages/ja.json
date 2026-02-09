@@ -44,7 +44,7 @@
   "about": {
     "meta": {
       "title": "会社概要 | dhp hospitality",
-      "description": "dhp hospitality 株式会社の会社概要。医療介護分野で培った信念がホスピタリティの新たな地平を切り拓きます。"
+      "description": "株式会社 dhp hospitality の会社概要。医療介護分野で培った信念がホスピタリティの新たな地平を切り拓きます。"
     },
     "label": "会社概要",
     "title": "Legacy of Excellence",
@@ -83,7 +83,7 @@
   },
   "footer": {
     "tagline": "ホスピタリティの新たな地平",
-    "copyright": "© {year} dhp hospitality Inc. All rights reserved.",
+    "copyright": "© {year} 株式会社 dhp hospitality All rights reserved.",
     "privacy": "プライバシーポリシー",
     "terms": "利用規約",
     "company": "会社概要"
@@ -91,12 +91,12 @@
   "privacy": {
     "meta": {
       "title": "プライバシーポリシー | dhp hospitality",
-      "description": "dhp hospitality 株式会社のプライバシーポリシー。個人情報の取り扱いについてご説明いたします。"
+      "description": "株式会社 dhp hospitality のプライバシーポリシー。個人情報の取り扱いについてご説明いたします。"
     },
     "label": "法的情報",
     "title": "プライバシーポリシー",
     "lastUpdated": "最終更新日：2025年12月1日",
-    "intro": "dhp hospitality 株式会社（以下「当社」）は、お客様の個人情報の保護を重要な責務と考え、以下のとおりプライバシーポリシーを定めます。",
+    "intro": "株式会社 dhp hospitality（以下「当社」）は、お客様の個人情報の保護を重要な責務と考え、以下のとおりプライバシーポリシーを定めます。",
     "section1Title": "1. 個人情報の収集",
     "section1Body": "当社は、以下の場合に個人情報を収集することがあります。\n・お問い合わせフォームからのご連絡\n・サービスのお申し込み\n・イベント・セミナーへの参加登録\n\n収集する情報には、お名前、会社名、メールアドレス、電話番号などが含まれます。",
     "section2Title": "2. 個人情報の利用目的",
@@ -111,12 +111,12 @@
   "terms": {
     "meta": {
       "title": "利用規約 | dhp hospitality",
-      "description": "dhp hospitality 株式会社のウェブサイト利用規約です。"
+      "description": "株式会社 dhp hospitality のウェブサイト利用規約です。"
     },
     "label": "法的情報",
     "title": "利用規約",
     "lastUpdated": "最終更新日：2025年12月1日",
-    "intro": "本利用規約（以下「本規約」）は、dhp hospitality 株式会社（以下「当社」）が提供するウェブサイトの利用条件を定めるものです。",
+    "intro": "本利用規約（以下「本規約」）は、株式会社 dhp hospitality（以下「当社」）が提供するウェブサイトの利用条件を定めるものです。",
     "section1Title": "1. 適用範囲",
     "section1Body": "本規約は、当社ウェブサイトを利用するすべてのお客様に適用されます。ウェブサイトをご利用になることで、本規約に同意したものとみなします。",
     "section2Title": "2. 知的財産権",
