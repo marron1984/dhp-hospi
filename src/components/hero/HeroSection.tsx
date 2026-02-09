@@ -95,7 +95,7 @@ export default function HeroSection() {
           className="absolute inset-0"
           style={{
             background:
-              "linear-gradient(160deg, #3D2E22 0%, #2C1E16 40%, #352618 100%)",
+              "linear-gradient(160deg, #4E3D30 0%, #3D2E22 40%, #453525 100%)",
           }}
         />
         {/* Layer 2: Warm gold radiance */}
@@ -111,7 +111,7 @@ export default function HeroSection() {
           className="absolute inset-0"
           style={{
             background:
-              "radial-gradient(ellipse at center, transparent 50%, rgba(44,30,22,0.7) 100%)",
+              "radial-gradient(ellipse at center, transparent 50%, rgba(61,46,34,0.7) 100%)",
           }}
         />
       </div>

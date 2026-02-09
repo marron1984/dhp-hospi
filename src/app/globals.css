@@ -8,10 +8,10 @@
   --accent-light: #C9A96E;
   --accent-dark: #8A6D3B;
 
-  /* Base — Walnut Brown Palette */
-  --walnut-deep: #2C1E16;
-  --walnut-mid: #3D2E22;
-  --walnut-soft: #4E3D30;
+  /* Base — Walnut Brown Palette (lighter) */
+  --walnut-deep: #3D2E22;
+  --walnut-mid: #4E3D30;
+  --walnut-soft: #5F4E40;
   --cream: #F5EDE4;
   --cream-warm: #EDE0D4;
   --cream-pure: #FAF6F1;
@@ -23,9 +23,9 @@
   --neutral-400: #A6947F;
   --neutral-500: #8A7560;
   --neutral-600: #6B5A49;
-  --neutral-700: #52422F;
-  --neutral-800: #3A2C1E;
-  --neutral-900: #241A11;
+  --neutral-700: #5A4836;
+  --neutral-800: #4A3828;
+  --neutral-900: #3A2C1E;
 
   /* Typography */
   --tracking-wide: 0.05em;
@@ -94,7 +94,7 @@ body {
 }
 
 .heading-xl {
-  font-size: clamp(3rem, 8vw, 7rem);
+  font-size: clamp(2.4rem, 6.4vw, 5.6rem);
 }
 
 .heading-lg {
