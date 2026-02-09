@@ -69,23 +69,23 @@ export const fragmentShader = `
     float threshold = uProgress * 2.8 - 0.8;
     float edge = smoothstep(threshold - 0.15, threshold + 0.05, combinedNoise);
 
-    // Bright, warm base color with luminous gradient
+    // Clean white base with subtle warmth variation
     vec3 baseColor = uColor;
-    vec3 brightColor = uColor * 1.6 + vec3(0.15, 0.08, 0.05);
-    vec3 finalColor = mix(baseColor, brightColor, 0.6 + 0.4 * noise1);
+    vec3 coolWhite = uColor * 0.92 + vec3(-0.02, -0.01, 0.02);
+    vec3 finalColor = mix(coolWhite, baseColor, 0.5 + 0.5 * noise1);
 
-    // Hot white edge glow — wide, intense
+    // Soft luminous edge glow
     float edgeGlow = smoothstep(threshold - 0.12, threshold, combinedNoise)
                    - smoothstep(threshold, threshold + 0.12, combinedNoise);
-    finalColor += vec3(1.0, 0.95, 0.9) * edgeGlow * 4.0;
+    finalColor += vec3(1.0, 1.0, 1.0) * edgeGlow * 2.0;
 
-    // Secondary orange spark along edge
+    // Subtle warm highlight along dissolve edge
     float spark = smoothstep(threshold - 0.03, threshold, combinedNoise)
                 - smoothstep(threshold, threshold + 0.03, combinedNoise);
-    finalColor += vec3(1.0, 0.6, 0.2) * spark * 3.0;
+    finalColor += vec3(1.0, 0.95, 0.88) * spark * 1.5;
 
-    // Pulsating brightness
-    float pulse = 1.0 + sin(t * 3.0) * 0.06;
+    // Gentle pulsating brightness
+    float pulse = 1.0 + sin(t * 3.0) * 0.03;
     finalColor *= pulse;
 
     float alpha = 1.0 - edge;
