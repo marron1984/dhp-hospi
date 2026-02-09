@@ -88,7 +88,7 @@ export const fragmentShader = `
     float pulse = 1.0 + sin(t * 3.0) * 0.03;
     finalColor *= pulse;
 
-    float alpha = (1.0 - edge) * 0.85;
+    float alpha = (1.0 - edge) * 0.6;
 
     gl_FragColor = vec4(finalColor, alpha);
   }

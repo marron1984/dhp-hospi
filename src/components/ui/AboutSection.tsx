@@ -193,25 +193,21 @@ export default function AboutSection() {
 
             {/* Corporate Info */}
             <div ref={statsRef} className="border border-neutral-800/50">
-              {/* Established & Address */}
-              <div className="grid grid-cols-2 gap-px">
-                <div className="p-6 border-b border-r border-neutral-800/50">
-                  <span className="label-text text-neutral-600">{t("established")}</span>
-                  <p className="heading-sm text-cream mt-2">{t("establishedValue")}</p>
-                </div>
-                <div className="p-6 border-b border-neutral-800/50">
-                  <span className="label-text text-neutral-600">{t("headquarters")}</span>
-                  <p className="body-sm text-cream mt-2 leading-relaxed">
-                    {corporation.headquarters[locale as keyof typeof corporation.headquarters]}
-                  </p>
-                </div>
+              {/* CEO */}
+              <div className="p-6 border-b border-neutral-800/50">
+                <span className="label-text text-neutral-600">
+                  {corporation.leadership[0].role[locale as keyof typeof corporation.leadership[0]["role"]]}
+                </span>
+                <p className="heading-sm text-cream mt-2">
+                  {corporation.leadership[0].name[locale as keyof typeof corporation.leadership[0]["name"]]}
+                </p>
               </div>
 
-              {/* Leadership */}
-              <div className="p-6">
+              {/* Directors & Executive Officer */}
+              <div className="p-6 border-b border-neutral-800/50">
                 <span className="label-text text-neutral-600 mb-4 block">{t("leadership")}</span>
                 <div className="grid gap-3">
-                  {corporation.leadership.map((member, i) => (
+                  {corporation.leadership.slice(1).map((member, i) => (
                     <div key={i} className="flex items-baseline gap-4">
                       <span className="label-text text-neutral-500 min-w-[5.5rem] shrink-0">
                         {member.role[locale as keyof typeof member.role]}
@@ -221,6 +217,20 @@ export default function AboutSection() {
                       </span>
                     </div>
                   ))}
+                </div>
+              </div>
+
+              {/* Established & Address */}
+              <div className="grid grid-cols-2 gap-px">
+                <div className="p-6 border-r border-neutral-800/50">
+                  <span className="label-text text-neutral-600">{t("established")}</span>
+                  <p className="heading-sm text-cream mt-2">{t("establishedValue")}</p>
+                </div>
+                <div className="p-6">
+                  <span className="label-text text-neutral-600">{t("headquarters")}</span>
+                  <p className="body-sm text-cream mt-2 leading-relaxed">
+                    {corporation.headquarters[locale as keyof typeof corporation.headquarters]}
+                  </p>
                 </div>
               </div>
             </div>
