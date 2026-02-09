@@ -33,7 +33,7 @@ export default function LiquidShader({ onComplete }: LiquidShaderProps) {
       uResolution: {
         value: new THREE.Vector2(window.innerWidth, window.innerHeight),
       },
-      uColor: { value: new THREE.Color(0xb01f24) },
+      uColor: { value: new THREE.Color(0xe0443a) },
     };
 
     const geometry = new THREE.PlaneGeometry(2, 2);
@@ -48,16 +48,18 @@ export default function LiquidShader({ onComplete }: LiquidShaderProps) {
     scene.add(mesh);
 
     const startTime = Date.now();
-    const duration = 2400;
+    const duration = 2800;
     let animationId: number;
 
     const animate = () => {
       const elapsed = Date.now() - startTime;
       const progress = Math.min(elapsed / duration, 1);
 
-      // Ease out expo
+      // Aggressive ease — fast start, slow end (ease-in-out cubic)
       const easedProgress =
-        progress === 1 ? 1 : 1 - Math.pow(2, -10 * progress);
+        progress < 0.5
+          ? 4 * progress * progress * progress
+          : 1 - Math.pow(-2 * progress + 2, 3) / 2;
 
       uniforms.uTime.value = elapsed * 0.001;
       uniforms.uProgress.value = easedProgress;

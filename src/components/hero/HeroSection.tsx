@@ -24,43 +24,57 @@ export default function HeroSection() {
   useEffect(() => {
     if (!shaderComplete) return;
 
-    const tl = gsap.timeline({ defaults: { ease: "power3.out" } });
+    const tl = gsap.timeline({ defaults: { ease: "power4.out" } });
 
-    // Stagger reveal of text elements
+    // Aggressive stagger — big movements, fast timing, scale punch
     tl.fromTo(
       subtitleRef.current,
-      { y: 40, opacity: 0 },
-      { y: 0, opacity: 1, duration: 1 }
+      { y: 80, opacity: 0, scale: 0.9 },
+      { y: 0, opacity: 1, scale: 1, duration: 0.7 }
     )
       .fromTo(
         titleRef.current,
-        { y: 60, opacity: 0 },
-        { y: 0, opacity: 1, duration: 1.2 },
-        "-=0.6"
+        { y: 120, opacity: 0, scale: 0.92, rotateX: 8 },
+        { y: 0, opacity: 1, scale: 1, rotateX: 0, duration: 1, ease: "expo.out" },
+        "-=0.3"
       )
       .fromTo(
         ctaRef.current,
-        { y: 30, opacity: 0 },
-        { y: 0, opacity: 1, duration: 0.8 },
-        "-=0.5"
+        { y: 60, opacity: 0, scale: 0.85 },
+        { y: 0, opacity: 1, scale: 1, duration: 0.6, ease: "back.out(1.4)" },
+        "-=0.4"
       )
       .fromTo(
         scrollIndicatorRef.current,
-        { opacity: 0 },
-        { opacity: 1, duration: 0.8 },
-        "-=0.3"
+        { y: 20, opacity: 0 },
+        { y: 0, opacity: 1, duration: 0.5 },
+        "-=0.2"
       );
 
-    // Parallax on scroll
+    // Parallax on scroll — faster response
     if (sectionRef.current) {
       gsap.to(titleRef.current, {
-        yPercent: -30,
+        yPercent: -50,
+        scale: 0.95,
+        opacity: 0.3,
         ease: "none",
         scrollTrigger: {
           trigger: sectionRef.current,
           start: "top top",
           end: "bottom top",
-          scrub: 1,
+          scrub: 0.5,
+        },
+      });
+
+      gsap.to(subtitleRef.current, {
+        yPercent: -80,
+        opacity: 0,
+        ease: "none",
+        scrollTrigger: {
+          trigger: sectionRef.current,
+          start: "top top",
+          end: "60% top",
+          scrub: 0.5,
         },
       });
     }
@@ -74,22 +88,30 @@ export default function HeroSection() {
       {/* WebGL Liquid Shader Entrance */}
       {!shaderComplete && <LiquidShader onComplete={handleShaderComplete} />}
 
-      {/* Background Layers for Parallax */}
+      {/* Background Layers — lighter warm gray */}
       <div className="absolute inset-0 z-0">
-        {/* Layer 1: Deep background gradient */}
+        {/* Layer 1: Warm charcoal base */}
         <div
           className="absolute inset-0"
           style={{
             background:
-              "radial-gradient(ellipse at 30% 50%, rgba(176,31,36,0.08) 0%, transparent 70%)",
+              "linear-gradient(160deg, #302C28 0%, #252220 40%, #2A2826 100%)",
           }}
         />
-        {/* Layer 2: Subtle vignette */}
+        {/* Layer 2: Soft crimson radiance */}
         <div
           className="absolute inset-0"
           style={{
             background:
-              "radial-gradient(ellipse at center, transparent 40%, rgba(10,10,10,0.8) 100%)",
+              "radial-gradient(ellipse at 35% 45%, rgba(224,68,58,0.12) 0%, transparent 65%)",
+          }}
+        />
+        {/* Layer 3: Light vignette */}
+        <div
+          className="absolute inset-0"
+          style={{
+            background:
+              "radial-gradient(ellipse at center, transparent 50%, rgba(30,28,26,0.6) 100%)",
           }}
         />
       </div>

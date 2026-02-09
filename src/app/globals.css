@@ -8,10 +8,10 @@
   --imperial-crimson-light: #D4393E;
   --imperial-crimson-dark: #8A1519;
 
-  /* Base Palette */
-  --obsidian-deep: #0A0A0A;
-  --obsidian-mid: #1A1A1A;
-  --obsidian-soft: #2A2A2A;
+  /* Base Palette — lighter warm grays */
+  --obsidian-deep: #1E1C1A;
+  --obsidian-mid: #2A2826;
+  --obsidian-soft: #3A3734;
   --pearl-silk: #F4F1ED;
   --pearl-warm: #EDE8E2;
   --pearl-pure: #FAFAF8;

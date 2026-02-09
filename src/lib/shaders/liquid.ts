@@ -51,26 +51,42 @@ export const fragmentShader = `
     float aspect = uResolution.x / uResolution.y;
     vec2 centeredUv = (uv - 0.5) * vec2(aspect, 1.0);
 
-    // Create flowing liquid noise
-    float noise1 = snoise(centeredUv * 3.0 + uTime * 0.3);
-    float noise2 = snoise(centeredUv * 5.0 - uTime * 0.2);
-    float noise3 = snoise(centeredUv * 8.0 + uTime * 0.15);
+    // Aggressive turbulent noise — fast, multi-octave swirl
+    float t = uTime;
+    float noise1 = snoise(centeredUv * 4.0 + vec2(t * 0.8, t * -0.5));
+    float noise2 = snoise(centeredUv * 7.0 - vec2(t * 0.6, t * 0.9));
+    float noise3 = snoise(centeredUv * 12.0 + vec2(t * 1.2, t * -0.7));
+    float noise4 = snoise(centeredUv * 20.0 + vec2(t * -1.5, t * 1.1));
 
-    float combinedNoise = noise1 * 0.5 + noise2 * 0.3 + noise3 * 0.2;
+    // Weighted blend with high-frequency detail
+    float combinedNoise = noise1 * 0.35 + noise2 * 0.3 + noise3 * 0.2 + noise4 * 0.15;
 
-    // Progress-based reveal (dissolve effect)
-    float threshold = uProgress * 2.2 - 0.6;
-    float edge = smoothstep(threshold - 0.3, threshold + 0.1, combinedNoise);
+    // Swirl distortion for organic liquid feel
+    float swirl = snoise(centeredUv * 2.5 + t * 0.4) * 0.3;
+    combinedNoise += swirl;
 
-    // Color with subtle gradient
+    // Progress-based reveal — faster, sharper dissolve
+    float threshold = uProgress * 2.8 - 0.8;
+    float edge = smoothstep(threshold - 0.15, threshold + 0.05, combinedNoise);
+
+    // Bright, warm base color with luminous gradient
     vec3 baseColor = uColor;
-    vec3 darkColor = uColor * 0.3;
-    vec3 finalColor = mix(darkColor, baseColor, 0.5 + 0.5 * noise1);
+    vec3 brightColor = uColor * 1.6 + vec3(0.15, 0.08, 0.05);
+    vec3 finalColor = mix(baseColor, brightColor, 0.6 + 0.4 * noise1);
 
-    // Add edge glow
-    float edgeGlow = smoothstep(threshold - 0.05, threshold, combinedNoise)
-                   - smoothstep(threshold, threshold + 0.05, combinedNoise);
-    finalColor += vec3(1.0, 0.9, 0.85) * edgeGlow * 2.0;
+    // Hot white edge glow — wide, intense
+    float edgeGlow = smoothstep(threshold - 0.12, threshold, combinedNoise)
+                   - smoothstep(threshold, threshold + 0.12, combinedNoise);
+    finalColor += vec3(1.0, 0.95, 0.9) * edgeGlow * 4.0;
+
+    // Secondary orange spark along edge
+    float spark = smoothstep(threshold - 0.03, threshold, combinedNoise)
+                - smoothstep(threshold, threshold + 0.03, combinedNoise);
+    finalColor += vec3(1.0, 0.6, 0.2) * spark * 3.0;
+
+    // Pulsating brightness
+    float pulse = 1.0 + sin(t * 3.0) * 0.06;
+    finalColor *= pulse;
 
     float alpha = 1.0 - edge;
 
