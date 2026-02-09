@@ -106,19 +106,19 @@ export default function AboutSection() {
   const { corporation } = corporateData;
 
   return (
-    <section ref={sectionRef} className="relative py-32 md:py-40 bg-obsidian">
+    <section ref={sectionRef} className="relative py-32 md:py-40 bg-walnut">
       <div className="container-dhp">
         <div className="grid gap-16 md:grid-cols-2 md:gap-24">
           {/* Left: Heritage Narrative */}
           <div ref={contentRef}>
             <div>
-              <span className="label-text text-imperial">{t("label")}</span>
-              <div className="mt-3 h-px w-8 bg-imperial opacity-60" />
+              <span className="label-text text-accent">{t("label")}</span>
+              <div className="mt-3 h-px w-8 bg-accent opacity-60" />
             </div>
-            <h2 className="heading-display heading-lg mt-6 text-pearl">
+            <h2 className="heading-display heading-lg mt-6 text-cream">
               {t("title")}
             </h2>
-            <h3 className="heading-display heading-sm mt-8 text-pearl">
+            <h3 className="heading-display heading-sm mt-8 text-cream">
               {t("heritageTitle")}
             </h3>
             <p className="body-lg mt-4 text-neutral-400 leading-relaxed">
@@ -126,7 +126,7 @@ export default function AboutSection() {
             </p>
 
             {/* Name Change Heritage */}
-            <div className="mt-12 border-l-2 border-imperial pl-6">
+            <div className="mt-12 border-l-2 border-accent pl-6">
               <span className="label-text text-neutral-600">
                 Legacy Narrative
               </span>
@@ -137,10 +137,10 @@ export default function AboutSection() {
                 <span className="body-sm text-neutral-600 line-through">
                   {corporation.formerName[locale as keyof typeof corporation.formerName]}
                 </span>
-                <svg width="20" height="8" viewBox="0 0 20 8" fill="none" className="text-imperial">
+                <svg width="20" height="8" viewBox="0 0 20 8" fill="none" className="text-accent">
                   <path d="M19.354 4.354a.5.5 0 000-.708L16.172.464a.5.5 0 10-.707.708L18.293 4l-2.828 2.828a.5.5 0 10.707.708l3.182-3.182zM0 4.5h19v-1H0v1z" fill="currentColor" />
                 </svg>
-                <span className="body-sm text-pearl font-medium">
+                <span className="body-sm text-cream font-medium">
                   {corporation.currentName[locale as keyof typeof corporation.currentName]}
                 </span>
               </div>
@@ -151,10 +151,10 @@ export default function AboutSection() {
           <div>
             {/* Timeline */}
             <div ref={timelineRef} className="relative pl-8 mb-16">
-              <div className="timeline-line absolute left-0 top-0 h-full w-px bg-imperial" />
+              <div className="timeline-line absolute left-0 top-0 h-full w-px bg-accent" />
 
               <div className="timeline-item mb-10 opacity-0">
-                <div className="absolute left-0 -translate-x-1/2 h-2 w-2 rounded-full bg-imperial" />
+                <div className="absolute left-0 -translate-x-1/2 h-2 w-2 rounded-full bg-accent" />
                 <span className="label-text text-neutral-600">2012.09</span>
                 <p className="body-sm mt-1 text-neutral-300">
                   {corporation.formerName[locale as keyof typeof corporation.formerName]}
@@ -162,7 +162,7 @@ export default function AboutSection() {
               </div>
 
               <div className="timeline-item mb-10 opacity-0">
-                <div className="absolute left-0 -translate-x-1/2 h-2 w-2 rounded-full bg-imperial" />
+                <div className="absolute left-0 -translate-x-1/2 h-2 w-2 rounded-full bg-accent" />
                 <span className="label-text text-neutral-600">2025.12</span>
                 <p className="body-sm mt-1 text-neutral-300">
                   {corporation.currentName[locale as keyof typeof corporation.currentName]}
@@ -170,9 +170,9 @@ export default function AboutSection() {
               </div>
 
               <div className="timeline-item opacity-0">
-                <div className="absolute left-0 -translate-x-1/2 h-2 w-2 rounded-full bg-imperial" />
+                <div className="absolute left-0 -translate-x-1/2 h-2 w-2 rounded-full bg-accent" />
                 <span className="label-text text-neutral-600">Present</span>
-                <p className="body-sm mt-1 text-imperial">
+                <p className="body-sm mt-1 text-accent">
                   A New Horizon in Hospitality
                 </p>
               </div>
@@ -182,21 +182,21 @@ export default function AboutSection() {
             <div ref={statsRef} className="grid grid-cols-2 gap-px border border-neutral-800/50">
               <div className="p-6 border-b border-r border-neutral-800/50">
                 <span className="label-text text-neutral-600">{t("established")}</span>
-                <p className="heading-sm text-pearl mt-2">{t("establishedValue")}</p>
+                <p className="heading-sm text-cream mt-2">{t("establishedValue")}</p>
               </div>
               <div className="p-6 border-b border-neutral-800/50">
                 <span className="label-text text-neutral-600">{t("headquarters")}</span>
-                <p className="heading-sm text-pearl mt-2">{t("headquartersValue")}</p>
+                <p className="heading-sm text-cream mt-2">{t("headquartersValue")}</p>
               </div>
               <div className="p-6 border-r border-neutral-800/50">
                 <span className="label-text text-neutral-600">{t("ceo")}</span>
-                <p className="heading-sm text-pearl mt-2">
+                <p className="heading-sm text-cream mt-2">
                   {corporation.leadership[0].name[locale as keyof typeof corporation.leadership[0]["name"]]}
                 </p>
               </div>
               <div className="p-6">
                 <span className="label-text text-neutral-600">{t("director")}</span>
-                <p className="heading-sm text-pearl mt-2">
+                <p className="heading-sm text-cream mt-2">
                   {corporation.leadership[1].name[locale as keyof typeof corporation.leadership[1]["name"]]}
                 </p>
               </div>

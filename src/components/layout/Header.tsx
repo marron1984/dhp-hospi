@@ -57,7 +57,7 @@ export default function Header({ locale }: { locale: string }) {
       ref={headerRef}
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-700 ${
         isScrolled
-          ? "bg-obsidian/90 backdrop-blur-md"
+          ? "bg-walnut/90 backdrop-blur-md"
           : "bg-transparent"
       }`}
       style={{ height: "var(--header-height)" }}
@@ -66,7 +66,7 @@ export default function Header({ locale }: { locale: string }) {
         {/* Logo */}
         <a href={`/${locale}`} className="relative z-10 flex flex-col">
           <span
-            className="text-lg font-light tracking-[0.15em] text-pearl"
+            className="text-lg font-light tracking-[0.15em] text-cream"
             style={{ fontVariant: "small-caps" }}
           >
             dhp hospitality
@@ -82,7 +82,7 @@ export default function Header({ locale }: { locale: string }) {
             <a
               key={item.key}
               href={item.href}
-              className="label-text text-neutral-400 transition-colors duration-300 hover:text-pearl"
+              className="label-text text-neutral-400 transition-colors duration-300 hover:text-cream"
             >
               {t(item.key)}
             </a>
@@ -92,7 +92,7 @@ export default function Header({ locale }: { locale: string }) {
           <div className="relative">
             <button
               onClick={() => setIsLangOpen(!isLangOpen)}
-              className="label-text flex items-center gap-1.5 text-neutral-400 transition-colors hover:text-pearl"
+              className="label-text flex items-center gap-1.5 text-neutral-400 transition-colors hover:text-cream"
               aria-label={t("language")}
             >
               {locale.toUpperCase()}
@@ -113,15 +113,15 @@ export default function Header({ locale }: { locale: string }) {
               </svg>
             </button>
             {isLangOpen && (
-              <div className="absolute right-0 top-full mt-3 min-w-[140px] border border-neutral-800 bg-obsidian-mid/95 backdrop-blur-md">
+              <div className="absolute right-0 top-full mt-3 min-w-[140px] border border-neutral-800 bg-walnut-mid/95 backdrop-blur-md">
                 {routing.locales.map((loc) => (
                   <button
                     key={loc}
                     onClick={() => switchLocale(loc)}
                     className={`block w-full px-4 py-2.5 text-left text-xs tracking-wider transition-colors ${
                       loc === locale
-                        ? "text-imperial"
-                        : "text-neutral-400 hover:text-pearl hover:bg-obsidian-soft/50"
+                        ? "text-accent"
+                        : "text-neutral-400 hover:text-cream hover:bg-walnut-soft/50"
                     }`}
                   >
                     {localeLabels[loc]}
@@ -139,12 +139,12 @@ export default function Header({ locale }: { locale: string }) {
           aria-label="Menu"
         >
           <span
-            className={`h-px w-6 bg-pearl transition-all duration-500 ${
+            className={`h-px w-6 bg-cream transition-all duration-500 ${
               isMenuOpen ? "translate-y-[3.5px] rotate-45" : ""
             }`}
           />
           <span
-            className={`h-px w-6 bg-pearl transition-all duration-500 ${
+            className={`h-px w-6 bg-cream transition-all duration-500 ${
               isMenuOpen ? "-translate-y-[3.5px] -rotate-45" : ""
             }`}
           />
@@ -152,7 +152,7 @@ export default function Header({ locale }: { locale: string }) {
 
         {/* Mobile Menu Overlay */}
         <div
-          className={`fixed inset-0 z-40 flex flex-col items-center justify-center bg-obsidian transition-all duration-700 md:hidden ${
+          className={`fixed inset-0 z-40 flex flex-col items-center justify-center bg-walnut transition-all duration-700 md:hidden ${
             isMenuOpen
               ? "opacity-100 pointer-events-auto"
               : "opacity-0 pointer-events-none"
@@ -164,7 +164,7 @@ export default function Header({ locale }: { locale: string }) {
                 key={item.key}
                 href={item.href}
                 onClick={() => setIsMenuOpen(false)}
-                className="heading-display heading-md text-pearl"
+                className="heading-display heading-md text-cream"
               >
                 {t(item.key)}
               </a>
@@ -178,7 +178,7 @@ export default function Header({ locale }: { locale: string }) {
                     setIsMenuOpen(false);
                   }}
                   className={`label-text transition-colors ${
-                    loc === locale ? "text-imperial" : "text-neutral-500"
+                    loc === locale ? "text-accent" : "text-neutral-500"
                   }`}
                 >
                   {loc.toUpperCase()}

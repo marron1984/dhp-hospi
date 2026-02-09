@@ -33,7 +33,7 @@ export default function LiquidShader({ onComplete }: LiquidShaderProps) {
       uResolution: {
         value: new THREE.Vector2(window.innerWidth, window.innerHeight),
       },
-      uColor: { value: new THREE.Color(0xf4f1ed) },
+      uColor: { value: new THREE.Color(0xf5ede4) },
     };
 
     const geometry = new THREE.PlaneGeometry(2, 2);

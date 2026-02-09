@@ -126,12 +126,12 @@ export default function ServicePillars() {
         {/* Section Header */}
         <div className="mb-20 max-w-2xl">
           <div ref={labelRef} className="mb-4 opacity-0">
-            <span className="label-text text-imperial">{t("label")}</span>
-            <div className="mt-3 h-px w-8 bg-imperial opacity-60" />
+            <span className="label-text text-accent">{t("label")}</span>
+            <div className="mt-3 h-px w-8 bg-accent opacity-60" />
           </div>
           <h2
             ref={titleRef}
-            className="heading-display heading-lg whitespace-pre-line text-pearl opacity-0"
+            className="heading-display heading-lg whitespace-pre-line text-cream opacity-0"
           >
             {t("title")}
           </h2>
@@ -145,16 +145,16 @@ export default function ServicePillars() {
           {pillars.map((pillar) => (
             <div
               key={pillar.id}
-              className="group relative overflow-hidden border border-neutral-800/50 p-8 md:p-10 transition-all duration-700 hover:border-imperial/30 hover:bg-obsidian-mid/30"
+              className="group relative overflow-hidden border border-neutral-800/50 p-8 md:p-10 transition-all duration-700 hover:border-accent/30 hover:bg-walnut-mid/30"
               data-cursor
               data-cursor-text={t("learnMore")}
             >
               {/* Mask Reveal Line */}
-              <div className="mask-reveal-line absolute left-0 top-0 h-[2px] w-full bg-imperial" />
+              <div className="mask-reveal-line absolute left-0 top-0 h-[2px] w-full bg-accent" />
 
               <div className="card-content opacity-0">
                 {/* Icon */}
-                <div className="mb-8 text-imperial transition-transform duration-500 group-hover:scale-110">
+                <div className="mb-8 text-accent transition-transform duration-500 group-hover:scale-110">
                   {icons[pillar.icon]}
                 </div>
 
@@ -164,7 +164,7 @@ export default function ServicePillars() {
                 </span>
 
                 {/* Title */}
-                <h3 className="heading-display heading-sm text-pearl mb-4">
+                <h3 className="heading-display heading-sm text-cream mb-4">
                   {pillar.title[locale as keyof typeof pillar.title]}
                 </h3>
 
@@ -175,7 +175,7 @@ export default function ServicePillars() {
 
                 {/* Learn More */}
                 <div className="mt-8 flex items-center gap-3 opacity-0 transition-opacity duration-500 group-hover:opacity-100">
-                  <span className="label-text text-imperial">
+                  <span className="label-text text-accent">
                     {t("learnMore")}
                   </span>
                   <svg
@@ -183,7 +183,7 @@ export default function ServicePillars() {
                     height="6"
                     viewBox="0 0 16 6"
                     fill="none"
-                    className="text-imperial"
+                    className="text-accent"
                   >
                     <path
                       d="M15.354 3.354a.5.5 0 000-.708L12.172.464a.5.5 0 10-.707.708L14.293 4l-2.828 2.828a.5.5 0 10.707.708l3.182-3.182zM0 3.5h15v-1H0v1z"

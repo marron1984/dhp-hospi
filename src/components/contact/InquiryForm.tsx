@@ -72,9 +72,9 @@ export default function InquiryForm() {
           <div
             className={`flex h-8 w-8 items-center justify-center border text-xs tracking-wider transition-all duration-500 ${
               s === step
-                ? "border-imperial bg-imperial text-pearl"
+                ? "border-accent bg-accent text-cream"
                 : s < step
-                  ? "border-imperial/50 text-imperial"
+                  ? "border-accent/50 text-accent"
                   : "border-neutral-700 text-neutral-600"
             }`}
           >
@@ -89,7 +89,7 @@ export default function InquiryForm() {
           {s < 3 && (
             <div
               className={`h-px w-12 transition-colors duration-500 ${
-                s < step ? "bg-imperial/50" : "bg-neutral-800"
+                s < step ? "bg-accent/50" : "bg-neutral-800"
               }`}
             />
           )}
@@ -102,8 +102,8 @@ export default function InquiryForm() {
     return (
       <section ref={sectionRef} className="relative py-32 md:py-40">
         <div className="container-dhp flex flex-col items-center text-center">
-          <div className="h-px w-12 bg-imperial mb-8" />
-          <h2 className="heading-display heading-md text-pearl">
+          <div className="h-px w-12 bg-accent mb-8" />
+          <h2 className="heading-display heading-md text-cream">
             {t("thankYou")}
           </h2>
           <p className="body-lg mt-4 text-neutral-400 max-w-md">
@@ -115,14 +115,14 @@ export default function InquiryForm() {
   }
 
   return (
-    <section ref={sectionRef} className="relative py-32 md:py-40 bg-obsidian-mid/20">
+    <section ref={sectionRef} className="relative py-32 md:py-40 bg-walnut-mid/20">
       <div className="container-dhp">
         <div className="grid gap-16 md:grid-cols-2 md:gap-24">
           {/* Left: Header */}
           <div ref={headerRef} className="opacity-0">
-            <span className="label-text text-imperial">{t("label")}</span>
-            <div className="mt-3 h-px w-8 bg-imperial opacity-60" />
-            <h2 className="heading-display heading-lg mt-6 whitespace-pre-line text-pearl">
+            <span className="label-text text-accent">{t("label")}</span>
+            <div className="mt-3 h-px w-8 bg-accent opacity-60" />
+            <h2 className="heading-display heading-lg mt-6 whitespace-pre-line text-cream">
               {t("title")}
             </h2>
             <p className="body-lg mt-6 text-neutral-400">
@@ -138,7 +138,7 @@ export default function InquiryForm() {
               {/* Step 1: Inquiry Type */}
               {step === 1 && (
                 <div className="space-y-3">
-                  <h3 className="heading-sm text-pearl mb-6">
+                  <h3 className="heading-sm text-cream mb-6">
                     {t("step1Title")}
                   </h3>
                   {inquiryTypes.map((type) => (
@@ -151,8 +151,8 @@ export default function InquiryForm() {
                       }}
                       className={`flex w-full items-center justify-between border p-5 transition-all duration-300 ${
                         formData.type === type.key
-                          ? "border-imperial bg-imperial/5 text-pearl"
-                          : "border-neutral-800 text-neutral-400 hover:border-neutral-600 hover:text-pearl"
+                          ? "border-accent bg-accent/5 text-cream"
+                          : "border-neutral-800 text-neutral-400 hover:border-neutral-600 hover:text-cream"
                       }`}
                     >
                       <span className="text-sm tracking-wider">{type.label}</span>
@@ -167,7 +167,7 @@ export default function InquiryForm() {
               {/* Step 2: Personal Info */}
               {step === 2 && (
                 <div className="space-y-6">
-                  <h3 className="heading-sm text-pearl mb-6">
+                  <h3 className="heading-sm text-cream mb-6">
                     {t("step2Title")}
                   </h3>
                   <div>
@@ -180,7 +180,7 @@ export default function InquiryForm() {
                       onChange={(e) =>
                         setFormData({ ...formData, companyName: e.target.value })
                       }
-                      className="w-full border-b border-neutral-700 bg-transparent py-3 text-pearl outline-none transition-colors focus:border-imperial"
+                      className="w-full border-b border-neutral-700 bg-transparent py-3 text-cream outline-none transition-colors focus:border-accent"
                     />
                   </div>
                   <div>
@@ -194,7 +194,7 @@ export default function InquiryForm() {
                       onChange={(e) =>
                         setFormData({ ...formData, name: e.target.value })
                       }
-                      className="w-full border-b border-neutral-700 bg-transparent py-3 text-pearl outline-none transition-colors focus:border-imperial"
+                      className="w-full border-b border-neutral-700 bg-transparent py-3 text-cream outline-none transition-colors focus:border-accent"
                     />
                   </div>
                   <div>
@@ -208,7 +208,7 @@ export default function InquiryForm() {
                       onChange={(e) =>
                         setFormData({ ...formData, email: e.target.value })
                       }
-                      className="w-full border-b border-neutral-700 bg-transparent py-3 text-pearl outline-none transition-colors focus:border-imperial"
+                      className="w-full border-b border-neutral-700 bg-transparent py-3 text-cream outline-none transition-colors focus:border-accent"
                     />
                   </div>
                   <div>
@@ -221,7 +221,7 @@ export default function InquiryForm() {
                       onChange={(e) =>
                         setFormData({ ...formData, phone: e.target.value })
                       }
-                      className="w-full border-b border-neutral-700 bg-transparent py-3 text-pearl outline-none transition-colors focus:border-imperial"
+                      className="w-full border-b border-neutral-700 bg-transparent py-3 text-cream outline-none transition-colors focus:border-accent"
                     />
                   </div>
 
@@ -229,14 +229,14 @@ export default function InquiryForm() {
                     <button
                       type="button"
                       onClick={() => setStep(1)}
-                      className="border border-neutral-700 px-6 py-3 text-sm tracking-wider text-neutral-400 transition-colors hover:border-neutral-500 hover:text-pearl"
+                      className="border border-neutral-700 px-6 py-3 text-sm tracking-wider text-neutral-400 transition-colors hover:border-neutral-500 hover:text-cream"
                     >
                       {t("back")}
                     </button>
                     <button
                       type="button"
                       onClick={() => setStep(3)}
-                      className="border border-imperial bg-imperial/10 px-8 py-3 text-sm tracking-wider text-pearl transition-colors hover:bg-imperial/20"
+                      className="border border-accent bg-accent/10 px-8 py-3 text-sm tracking-wider text-cream transition-colors hover:bg-accent/20"
                     >
                       {t("next")}
                     </button>
@@ -247,7 +247,7 @@ export default function InquiryForm() {
               {/* Step 3: Message */}
               {step === 3 && (
                 <div className="space-y-6">
-                  <h3 className="heading-sm text-pearl mb-6">
+                  <h3 className="heading-sm text-cream mb-6">
                     {t("step3Title")}
                   </h3>
                   <div>
@@ -261,7 +261,7 @@ export default function InquiryForm() {
                       onChange={(e) =>
                         setFormData({ ...formData, message: e.target.value })
                       }
-                      className="w-full resize-none border-b border-neutral-700 bg-transparent py-3 text-pearl outline-none transition-colors focus:border-imperial"
+                      className="w-full resize-none border-b border-neutral-700 bg-transparent py-3 text-cream outline-none transition-colors focus:border-accent"
                     />
                   </div>
 
@@ -269,13 +269,13 @@ export default function InquiryForm() {
                     <button
                       type="button"
                       onClick={() => setStep(2)}
-                      className="border border-neutral-700 px-6 py-3 text-sm tracking-wider text-neutral-400 transition-colors hover:border-neutral-500 hover:text-pearl"
+                      className="border border-neutral-700 px-6 py-3 text-sm tracking-wider text-neutral-400 transition-colors hover:border-neutral-500 hover:text-cream"
                     >
                       {t("back")}
                     </button>
                     <button
                       type="submit"
-                      className="group flex items-center gap-3 border border-imperial bg-imperial px-8 py-3 text-sm tracking-wider text-pearl transition-all hover:bg-imperial-dark"
+                      className="group flex items-center gap-3 border border-accent bg-accent px-8 py-3 text-sm tracking-wider text-cream transition-all hover:bg-accent-dark"
                     >
                       {t("submit")}
                       <svg

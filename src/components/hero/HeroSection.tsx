@@ -88,30 +88,30 @@ export default function HeroSection() {
       {/* WebGL Liquid Shader Entrance */}
       {!shaderComplete && <LiquidShader onComplete={handleShaderComplete} />}
 
-      {/* Background Layers — lighter warm gray */}
+      {/* Background Layers — walnut wood warmth */}
       <div className="absolute inset-0 z-0">
-        {/* Layer 1: Warm charcoal base */}
+        {/* Layer 1: Deep walnut gradient */}
         <div
           className="absolute inset-0"
           style={{
             background:
-              "linear-gradient(160deg, #302C28 0%, #252220 40%, #2A2826 100%)",
+              "linear-gradient(160deg, #3D2E22 0%, #2C1E16 40%, #352618 100%)",
           }}
         />
-        {/* Layer 2: Soft crimson radiance */}
+        {/* Layer 2: Warm gold radiance */}
         <div
           className="absolute inset-0"
           style={{
             background:
-              "radial-gradient(ellipse at 35% 45%, rgba(224,68,58,0.12) 0%, transparent 65%)",
+              "radial-gradient(ellipse at 35% 45%, rgba(176,141,87,0.1) 0%, transparent 65%)",
           }}
         />
-        {/* Layer 3: Light vignette */}
+        {/* Layer 3: Natural vignette */}
         <div
           className="absolute inset-0"
           style={{
             background:
-              "radial-gradient(ellipse at center, transparent 50%, rgba(30,28,26,0.6) 100%)",
+              "radial-gradient(ellipse at center, transparent 50%, rgba(44,30,22,0.7) 100%)",
           }}
         />
       </div>
@@ -120,16 +120,16 @@ export default function HeroSection() {
       <div className="container-dhp relative z-10 flex flex-col items-center text-center">
         {/* Subtitle */}
         <div ref={subtitleRef} className="mb-6 opacity-0">
-          <span className="label-text text-imperial">
+          <span className="label-text text-accent">
             {t("subtitle")}
           </span>
-          <div className="mx-auto mt-3 h-px w-12 bg-imperial opacity-60" />
+          <div className="mx-auto mt-3 h-px w-12 bg-accent opacity-60" />
         </div>
 
         {/* Main Title */}
         <h1
           ref={titleRef}
-          className="heading-display heading-xl max-w-4xl whitespace-pre-line text-pearl opacity-0"
+          className="heading-display heading-xl max-w-4xl whitespace-pre-line text-cream opacity-0"
         >
           {t("title")}
         </h1>
@@ -140,9 +140,9 @@ export default function HeroSection() {
             href="#services"
             data-cursor
             data-cursor-text="Explore"
-            className="group inline-flex items-center gap-4 border border-neutral-700 px-8 py-4 transition-all duration-500 hover:border-imperial hover:bg-imperial/5"
+            className="group inline-flex items-center gap-4 border border-neutral-700 px-8 py-4 transition-all duration-500 hover:border-accent hover:bg-accent/5"
           >
-            <span className="label-text text-pearl">
+            <span className="label-text text-cream">
               {t("cta")}
             </span>
             <svg
@@ -170,7 +170,7 @@ export default function HeroSection() {
           </span>
           <div className="h-12 w-px overflow-hidden bg-neutral-800">
             <div
-              className="h-full w-full bg-imperial"
+              className="h-full w-full bg-accent"
               style={{
                 animation: "scrollLine 2s ease-in-out infinite",
               }}
