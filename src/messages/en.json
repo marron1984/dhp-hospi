@@ -1,0 +1,77 @@
+{
+  "meta": {
+    "title": "dhp hospitality | A New Horizon in Hospitality",
+    "description": "Hotel Development, Brand Attraction, and FC Management. dhp hospitality redefines five-star hospitality."
+  },
+  "nav": {
+    "home": "Home",
+    "services": "Services",
+    "portfolio": "Portfolio",
+    "about": "About",
+    "contact": "Contact",
+    "language": "Language"
+  },
+  "hero": {
+    "subtitle": "A New Horizon in Hospitality",
+    "title": "Where Trust and Innovation\nCraft the Ultimate Stay",
+    "cta": "Experience",
+    "scroll": "Scroll"
+  },
+  "services": {
+    "label": "Services",
+    "title": "Three Pillars Shaping\nthe Future of Hospitality",
+    "description": "Built on the conviction of 'supporting people,' cultivated through medical and care services, we redefine five-star hospitality through Hotel Development, Brand Attraction, and FC Management.",
+    "learnMore": "Learn More"
+  },
+  "portfolio": {
+    "label": "Flagship",
+    "title": "Nara Kasuga Kanoya",
+    "tagline": "Embraced by an Ancient Forest, Memories of a Grand Residence",
+    "description": "Adjacent to the sacred grounds of Kasuga Taisha, enveloped in eternal nature. A one-of-a-kind residential experience where the traditional beauty of Sukiya-zukuri meets modern comfort.",
+    "viewDetails": "View Details",
+    "heritage": "Adjacent to the sacred grounds of Kasuga Taisha",
+    "architecture": "A fusion of Sukiya-zukuri beauty and modern comfort",
+    "experience": "Panoramic primeval forest views from every room"
+  },
+  "about": {
+    "label": "About Us",
+    "title": "Legacy of Excellence",
+    "heritageTitle": "From Medical Care to Hospitality",
+    "heritageBody": "Since our founding in 2012, we have been sincerely committed to 'supporting people' in the medical and care fields. Now, we bring that spirit to full bloom in the world of hospitality. Our name change in December 2025 is not merely a rebrand — it is proof of evolution.",
+    "established": "Established",
+    "establishedValue": "September 2012",
+    "headquarters": "Headquarters",
+    "headquartersValue": "Chuo-ku, Osaka",
+    "ceo": "Chief Executive Officer",
+    "director": "Director"
+  },
+  "contact": {
+    "label": "Contact",
+    "title": "Partnership\nInquiries",
+    "description": "We welcome inquiries regarding Hotel Development, Brand Attraction, and FC Management.",
+    "step1Title": "Inquiry Type",
+    "step2Title": "Your Information",
+    "step3Title": "Message",
+    "typeHotelDev": "Hotel Development",
+    "typeBrandAttraction": "Brand Attraction",
+    "typeFcManagement": "FC Management",
+    "typeOther": "Other",
+    "companyName": "Company Name",
+    "name": "Full Name",
+    "email": "Email Address",
+    "phone": "Phone Number",
+    "message": "Your Message",
+    "next": "Next",
+    "back": "Back",
+    "submit": "Submit",
+    "thankYou": "Thank you for your inquiry",
+    "thankYouMessage": "A representative will be in touch with you shortly."
+  },
+  "footer": {
+    "tagline": "A New Horizon in Hospitality",
+    "copyright": "© {year} dhp hospitality Inc. All rights reserved.",
+    "privacy": "Privacy Policy",
+    "terms": "Terms of Service",
+    "company": "About Us"
+  }
+}

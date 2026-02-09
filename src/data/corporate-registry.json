@@ -1,0 +1,133 @@
+{
+  "corporation": {
+    "currentName": {
+      "ja": "dhp hospitality 株式会社",
+      "en": "dhp hospitality Inc.",
+      "zh-TW": "dhp hospitality 股份有限公司"
+    },
+    "formerName": {
+      "ja": "医療介護開発機構 株式会社",
+      "en": "Medical Care Development Organization Inc.",
+      "zh-TW": "醫療介護開發機構 股份有限公司"
+    },
+    "nameChangeDate": "2025-12",
+    "nameChangeNarrative": {
+      "ja": "医療・介護分野で培った「人を支える」という信念が、ホスピタリティの新たな地平を切り拓く原動力となりました。",
+      "en": "The conviction of 'supporting people,' cultivated through years in medical and care services, became the driving force behind a new horizon in hospitality.",
+      "zh-TW": "在醫療與照護領域培養的「支持人心」信念，成為開拓款待新境界的原動力。"
+    },
+    "established": "2012-09",
+    "headquarters": {
+      "ja": "大阪市中央区",
+      "en": "Chuo-ku, Osaka",
+      "zh-TW": "大阪市中央區"
+    },
+    "leadership": [
+      {
+        "role": {
+          "ja": "代表取締役",
+          "en": "Chief Executive Officer",
+          "zh-TW": "代表取締役（執行長）"
+        },
+        "name": {
+          "ja": "榎本 泰之",
+          "en": "Yasuyuki Enomoto",
+          "zh-TW": "榎本 泰之"
+        }
+      },
+      {
+        "role": {
+          "ja": "取締役",
+          "en": "Director",
+          "zh-TW": "取締役（董事）"
+        },
+        "name": {
+          "ja": "河原 和夫",
+          "en": "Kazuo Kawahara",
+          "zh-TW": "河原 和夫"
+        }
+      }
+    ],
+    "businessPillars": [
+      {
+        "id": "hotel-development",
+        "icon": "building",
+        "title": {
+          "ja": "ホテル開発事業",
+          "en": "Hotel Development",
+          "zh-TW": "酒店開發事業"
+        },
+        "description": {
+          "ja": "土地の選定から設計、施工、運営まで。一気通貫のホテル開発で、その地域の物語を紡ぐ唯一無二の空間を創造します。",
+          "en": "From site selection to design, construction, and operations. Through integrated hotel development, we create one-of-a-kind spaces that weave the stories of each locale.",
+          "zh-TW": "從選址到設計、施工、營運。透過一貫式酒店開發，創造出編織地域故事的獨一無二空間。"
+        }
+      },
+      {
+        "id": "brand-attraction",
+        "icon": "sparkles",
+        "title": {
+          "ja": "ブランド誘致事業",
+          "en": "Brand Attraction",
+          "zh-TW": "品牌引進事業"
+        },
+        "description": {
+          "ja": "国内外の一流ホテルブランドとの交渉・誘致。最適なブランドマッチングで、プロジェクトの価値を最大化します。",
+          "en": "Negotiating and attracting world-class hotel brands. Through optimal brand matching, we maximize the value of every project.",
+          "zh-TW": "交涉並引進國內外一流酒店品牌。透過最佳品牌配對，將項目價值最大化。"
+        }
+      },
+      {
+        "id": "fc-management",
+        "icon": "shield",
+        "title": {
+          "ja": "FC運営管理事業",
+          "en": "FC Management",
+          "zh-TW": "FC營運管理事業"
+        },
+        "description": {
+          "ja": "フランチャイズ方式によるホテル運営管理。蓄積されたノウハウと独自のオペレーション基準で、持続可能な収益と最高のゲスト体験を実現します。",
+          "en": "Hotel operations management through the franchise model. With accumulated expertise and proprietary operational standards, we deliver sustainable returns and exceptional guest experiences.",
+          "zh-TW": "透過加盟方式進行酒店營運管理。憑藉累積的專業知識與獨特營運標準，實現可持續收益與極致賓客體驗。"
+        }
+      }
+    ]
+  },
+  "flagshipProperty": {
+    "name": {
+      "ja": "奈良春日 鹿のや",
+      "en": "Nara Kasuga Kanoya",
+      "zh-TW": "奈良春日 鹿之屋"
+    },
+    "tagline": {
+      "ja": "千年の杜に抱かれた、邸宅の記憶",
+      "en": "Embraced by an Ancient Forest, Memories of a Grand Residence",
+      "zh-TW": "被千年之森環抱的邸宅記憶"
+    },
+    "location": {
+      "ja": "奈良市春日野町",
+      "en": "Kasugano-cho, Nara City",
+      "zh-TW": "奈良市春日野町"
+    },
+    "highlights": [
+      {
+        "key": "heritage",
+        "ja": "春日大社の神域に隣接",
+        "en": "Adjacent to the sacred grounds of Kasuga Taisha",
+        "zh-TW": "毗鄰春日大社神域"
+      },
+      {
+        "key": "architecture",
+        "ja": "数寄屋造りの伝統美と現代の快適性の融合",
+        "en": "A fusion of Sukiya-zukuri traditional beauty and modern comfort",
+        "zh-TW": "數寄屋造傳統美學與現代舒適的融合"
+      },
+      {
+        "key": "experience",
+        "ja": "全室から望む春日山原始林の絶景",
+        "en": "Panoramic views of Kasugayama Primeval Forest from every room",
+        "zh-TW": "每間客房均可眺望春日山原始林絕景"
+      }
+    ]
+  }
+}

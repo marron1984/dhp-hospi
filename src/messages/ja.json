@@ -1,0 +1,77 @@
+{
+  "meta": {
+    "title": "dhp hospitality | ホスピタリティの新たな地平",
+    "description": "ホテル開発、ブランド誘致、FC運営管理。dhp hospitalityは、5つ星のホスピタリティを再定義します。"
+  },
+  "nav": {
+    "home": "ホーム",
+    "services": "事業内容",
+    "portfolio": "ポートフォリオ",
+    "about": "会社概要",
+    "contact": "お問い合わせ",
+    "language": "言語"
+  },
+  "hero": {
+    "subtitle": "ホスピタリティの新たな地平",
+    "title": "信頼と革新が紡ぐ\n至高の滞在体験",
+    "cta": "体験する",
+    "scroll": "スクロール"
+  },
+  "services": {
+    "label": "事業内容",
+    "title": "三つの柱で描く、\nホスピタリティの未来",
+    "description": "医療・介護分野で培った「人を支える」という信念を礎に、ホテル開発、ブランド誘致、FC運営管理の三つの事業を通じて、5つ星のホスピタリティを再定義します。",
+    "learnMore": "詳細を見る"
+  },
+  "portfolio": {
+    "label": "フラッグシップ",
+    "title": "奈良春日 鹿のや",
+    "tagline": "千年の杜に抱かれた、邸宅の記憶",
+    "description": "春日大社の神域に隣接し、悠久の自然に抱かれた空間。数寄屋造りの伝統美と現代の快適性が融合する、唯一無二の邸宅体験をお届けします。",
+    "viewDetails": "詳しく見る",
+    "heritage": "春日大社の神域に隣接",
+    "architecture": "数寄屋造りの伝統美と現代の快適性の融合",
+    "experience": "全室から望む春日山原始林の絶景"
+  },
+  "about": {
+    "label": "会社概要",
+    "title": "Legacy of Excellence",
+    "heritageTitle": "医療から、ホスピタリティへ",
+    "heritageBody": "2012年の創業以来、医療・介護の分野で「人を支える」ことに真摯に向き合ってきた私たちが、その精神をホスピタリティの世界で開花させます。2025年12月の商号変更は、単なる名前の変更ではなく、進化の証です。",
+    "established": "設立",
+    "establishedValue": "2012年9月",
+    "headquarters": "本社所在地",
+    "headquartersValue": "大阪市中央区",
+    "ceo": "代表取締役",
+    "director": "取締役"
+  },
+  "contact": {
+    "label": "お問い合わせ",
+    "title": "パートナーシップの\nご相談",
+    "description": "ホテル開発、ブランド誘致、FC運営管理に関するお問い合わせをお待ちしております。",
+    "step1Title": "お問い合わせ種別",
+    "step2Title": "お客様情報",
+    "step3Title": "お問い合わせ内容",
+    "typeHotelDev": "ホテル開発",
+    "typeBrandAttraction": "ブランド誘致",
+    "typeFcManagement": "FC運営管理",
+    "typeOther": "その他",
+    "companyName": "会社名",
+    "name": "お名前",
+    "email": "メールアドレス",
+    "phone": "電話番号",
+    "message": "お問い合わせ内容",
+    "next": "次へ",
+    "back": "戻る",
+    "submit": "送信する",
+    "thankYou": "お問い合わせありがとうございます",
+    "thankYouMessage": "担当者より折り返しご連絡差し上げます。"
+  },
+  "footer": {
+    "tagline": "ホスピタリティの新たな地平",
+    "copyright": "© {year} dhp hospitality Inc. All rights reserved.",
+    "privacy": "プライバシーポリシー",
+    "terms": "利用規約",
+    "company": "会社概要"
+  }
+}

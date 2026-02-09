@@ -1,0 +1,77 @@
+{
+  "meta": {
+    "title": "dhp hospitality | 款待的嶄新境界",
+    "description": "酒店開發、品牌引進、FC營運管理。dhp hospitality 重新定義五星級款待體驗。"
+  },
+  "nav": {
+    "home": "首頁",
+    "services": "事業內容",
+    "portfolio": "作品集",
+    "about": "公司概況",
+    "contact": "聯繫我們",
+    "language": "語言"
+  },
+  "hero": {
+    "subtitle": "款待的嶄新境界",
+    "title": "信賴與革新交織的\n極致住宿體驗",
+    "cta": "探索體驗",
+    "scroll": "向下滾動"
+  },
+  "services": {
+    "label": "事業內容",
+    "title": "以三大支柱描繪\n款待的未來",
+    "description": "以在醫療與照護領域培養的「支持人心」信念為基石，透過酒店開發、品牌引進、FC營運管理三大事業，重新定義五星級邸宅級體驗。",
+    "learnMore": "了解更多"
+  },
+  "portfolio": {
+    "label": "旗艦項目",
+    "title": "奈良春日 鹿之屋",
+    "tagline": "被千年之森環抱的邸宅記憶",
+    "description": "毗鄰春日大社神域，被永恆自然環抱的空間。數寄屋造傳統美學與現代舒適的融合，為您呈獻獨一無二的邸宅級體驗。",
+    "viewDetails": "查看詳情",
+    "heritage": "毗鄰春日大社神域",
+    "architecture": "數寄屋造傳統美學與現代舒適的融合",
+    "experience": "每間客房均可眺望春日山原始林絕景"
+  },
+  "about": {
+    "label": "公司概況",
+    "title": "卓越傳承",
+    "heritageTitle": "從醫療到極致款待",
+    "heritageBody": "自2012年創立以來，我們在醫療與照護領域真誠地致力於「支持人心」。如今，我們將這份精神在款待世界中綻放。2025年12月的更名並非僅是名稱變更——而是進化的證明。",
+    "established": "成立時間",
+    "establishedValue": "2012年9月",
+    "headquarters": "總部所在地",
+    "headquartersValue": "大阪市中央區",
+    "ceo": "代表取締役（執行長）",
+    "director": "取締役（董事）"
+  },
+  "contact": {
+    "label": "聯繫我們",
+    "title": "合作夥伴\n諮詢",
+    "description": "歡迎就酒店開發、品牌引進、FC營運管理相關事宜與我們聯繫。",
+    "step1Title": "諮詢類型",
+    "step2Title": "您的資料",
+    "step3Title": "諮詢內容",
+    "typeHotelDev": "酒店開發",
+    "typeBrandAttraction": "品牌引進",
+    "typeFcManagement": "FC營運管理",
+    "typeOther": "其他",
+    "companyName": "公司名稱",
+    "name": "姓名",
+    "email": "電子郵件",
+    "phone": "電話號碼",
+    "message": "諮詢內容",
+    "next": "下一步",
+    "back": "返回",
+    "submit": "提交",
+    "thankYou": "感謝您的諮詢",
+    "thankYouMessage": "我們的代表將盡快與您聯繫。"
+  },
+  "footer": {
+    "tagline": "款待的嶄新境界",
+    "copyright": "© {year} dhp hospitality Inc. 版權所有。",
+    "privacy": "隱私政策",
+    "terms": "服務條款",
+    "company": "公司概況"
+  }
+}
