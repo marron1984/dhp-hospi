@@ -18,12 +18,20 @@
     "scroll": "Scroll"
   },
   "services": {
+    "meta": {
+      "title": "Services | dhp hospitality",
+      "description": "Hotel Development, Brand Attraction, and FC Management. Three pillars shaping the future of hospitality."
+    },
     "label": "Services",
     "title": "Three Pillars Shaping\nthe Future of Hospitality",
     "description": "Built on the conviction of 'supporting people,' cultivated through medical and care services, we redefine five-star hospitality through Hotel Development, Brand Attraction, and FC Management.",
     "learnMore": "Learn More"
   },
   "portfolio": {
+    "meta": {
+      "title": "Portfolio | dhp hospitality",
+      "description": "Nara Kasuga Kanoya — A one-of-a-kind residential experience embraced by an ancient forest."
+    },
     "label": "Flagship",
     "title": "Nara Kasuga Kanoya",
     "tagline": "Embraced by an Ancient Forest, Memories of a Grand Residence",
@@ -34,6 +42,10 @@
     "experience": "Panoramic primeval forest views from every room"
   },
   "about": {
+    "meta": {
+      "title": "About Us | dhp hospitality",
+      "description": "About dhp hospitality Inc. From medical care to a new horizon in hospitality."
+    },
     "label": "About Us",
     "title": "Legacy of Excellence",
     "heritageTitle": "From Medical Care to Hospitality",
@@ -44,6 +56,10 @@
     "leadership": "Leadership"
   },
   "contact": {
+    "meta": {
+      "title": "Contact | dhp hospitality",
+      "description": "Contact us regarding Hotel Development, Brand Attraction, and FC Management partnerships."
+    },
     "label": "Contact",
     "title": "Partnership\nInquiries",
     "description": "We welcome inquiries regarding Hotel Development, Brand Attraction, and FC Management.",
@@ -71,5 +87,104 @@
     "privacy": "Privacy Policy",
     "terms": "Terms of Service",
     "company": "About Us"
+  },
+  "privacy": {
+    "meta": {
+      "title": "Privacy Policy | dhp hospitality",
+      "description": "Privacy policy of dhp hospitality Inc. Learn how we handle your personal information."
+    },
+    "label": "Legal",
+    "title": "Privacy Policy",
+    "lastUpdated": "Last Updated: December 1, 2025",
+    "intro": "dhp hospitality Inc. (hereinafter \"the Company\") considers the protection of personal information an important responsibility and hereby establishes this Privacy Policy.",
+    "section1Title": "1. Collection of Personal Information",
+    "section1Body": "We may collect personal information in the following circumstances:\n• Inquiries submitted through our contact form\n• Service applications\n• Event and seminar registrations\n\nInformation collected may include your name, company name, email address, and phone number.",
+    "section2Title": "2. Purpose of Use",
+    "section2Body": "Personal information collected is used for the following purposes:\n• Responding to inquiries\n• Providing and improving our services\n• Notifications about new services and events\n• Compliance with applicable laws",
+    "section3Title": "3. Disclosure to Third Parties",
+    "section3Body": "We will not provide personal information to third parties without consent, except as required by law.",
+    "section4Title": "4. Information Security",
+    "section4Body": "We implement appropriate security measures to maintain the accuracy of personal information and prevent unauthorized access, loss, damage, alteration, or leakage.",
+    "section5Title": "5. Contact",
+    "section5Body": "For inquiries regarding the handling of personal information, please contact us through our inquiry form."
+  },
+  "terms": {
+    "meta": {
+      "title": "Terms of Service | dhp hospitality",
+      "description": "Terms of service for the dhp hospitality Inc. website."
+    },
+    "label": "Legal",
+    "title": "Terms of Service",
+    "lastUpdated": "Last Updated: December 1, 2025",
+    "intro": "These Terms of Service (hereinafter \"Terms\") establish the conditions of use for the website provided by dhp hospitality Inc. (hereinafter \"the Company\").",
+    "section1Title": "1. Scope of Application",
+    "section1Body": "These Terms apply to all users of our website. By using the website, you are deemed to have agreed to these Terms.",
+    "section2Title": "2. Intellectual Property",
+    "section2Body": "All content on our website (text, images, designs, logos, etc.) is the intellectual property of the Company or its rightful owners. Unauthorized reproduction, reprinting, or distribution is prohibited.",
+    "section3Title": "3. Prohibited Activities",
+    "section3Body": "The following activities are prohibited:\n• Actions that violate laws or public order\n• Actions that infringe the rights of the Company or third parties\n• Actions that interfere with website operations\n• Unauthorized access or attempts thereof",
+    "section4Title": "4. Disclaimer",
+    "section4Body": "While we strive to ensure the accuracy and completeness of information on our website, we make no guarantees. The Company assumes no liability for damages arising from the use of this website.",
+    "section5Title": "5. Changes to Terms",
+    "section5Body": "The Company may modify these Terms without prior notice when deemed necessary. Modified Terms shall take effect upon publication on the website."
+  },
+  "serviceDetail": {
+    "meta": {
+      "hotelDev": {
+        "title": "Hotel Development | dhp hospitality",
+        "description": "From site selection to design, construction, and operations. Creating one-of-a-kind spaces through integrated hotel development."
+      },
+      "brandAttraction": {
+        "title": "Brand Attraction | dhp hospitality",
+        "description": "Negotiating and attracting world-class hotel brands. Optimal brand matching to maximize project value."
+      },
+      "fcManagement": {
+        "title": "FC Management | dhp hospitality",
+        "description": "Hotel operations management through the franchise model. Delivering sustainable returns and exceptional guest experiences."
+      }
+    },
+    "backToServices": "Back to Services",
+    "approach": "Approach",
+    "strengths": "Strengths",
+    "cta": "Contact Us",
+    "hotelDev": {
+      "headline": "Weaving the Stories of Place\ninto One-of-a-Kind Hotels",
+      "lead": "From site selection to design, construction, and operations. Through an integrated development process, we create one-of-a-kind spaces rooted in the essence of each locale.",
+      "approach1Title": "Site Selection & Planning",
+      "approach1Body": "Thorough analysis of location potential. We deeply understand the history, culture, and natural environment to build concepts unique to each site.",
+      "approach2Title": "Design & Construction Management",
+      "approach2Body": "Collaborating with leading architects and designers to bring concepts to life in space. We pursue quality down to the finest detail, creating environments that engage all five senses.",
+      "approach3Title": "Operations & Branding",
+      "approach3Body": "Comprehensive planning that envisions post-opening strategies. We deliver sustainable value creation from day one.",
+      "strength1": "A philosophy of 'supporting people,' cultivated in medical and care services",
+      "strength2": "Integrated development capabilities from site selection to operations",
+      "strength3": "Concept design that weaves the narratives of place"
+    },
+    "brandAttraction": {
+      "headline": "Bringing World-Class Brands\nto the Japanese Stage",
+      "lead": "Through negotiation and attraction of premier hotel brands worldwide, we maximize project value with optimal brand matching.",
+      "approach1Title": "Brand Research",
+      "approach1Body": "Continuous research into the global hotel market. We accumulate insights to select the perfect brand for each project.",
+      "approach2Title": "Negotiation & Matching",
+      "approach2Body": "Direct negotiations with brand headquarters, presenting project appeal while securing optimal terms for both parties.",
+      "approach3Title": "Contract & Launch Support",
+      "approach3Body": "Supporting franchise and management contract execution. We provide consistent guidance throughout the process to opening day.",
+      "strength1": "Extensive network with global hotel brands",
+      "strength2": "Negotiation expertise that maximizes project value",
+      "strength3": "Consistent support from contract to grand opening"
+    },
+    "fcManagement": {
+      "headline": "Creating Sustainable Value\nthrough Proven Operations",
+      "lead": "Hotel operations management through the franchise model. With accumulated expertise and proprietary operational standards, we deliver sustainable returns and exceptional guest experiences.",
+      "approach1Title": "Operations Design",
+      "approach1Body": "Designing optimal operational frameworks tailored to each hotel's characteristics. We achieve the balance between efficiency and genuine hospitality.",
+      "approach2Title": "Quality Management & Training",
+      "approach2Body": "Maintaining and elevating service quality based on proprietary standards. Through staff training programs, we ensure consistently exceptional service.",
+      "approach3Title": "Revenue Optimization",
+      "approach3Body": "Leveraging revenue management methodologies to optimize earnings. We support sustainable business operations with data-driven strategies.",
+      "strength1": "Proprietary operational standards and quality management systems",
+      "strength2": "Staff training programs ensuring consistent service excellence",
+      "strength3": "Data-driven revenue optimization methodologies"
+    }
   }
 }

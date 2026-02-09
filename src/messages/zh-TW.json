@@ -18,12 +18,20 @@
     "scroll": "向下滾動"
   },
   "services": {
+    "meta": {
+      "title": "事業內容 | dhp hospitality",
+      "description": "酒店開發、品牌引進、FC營運管理。以三大支柱描繪款待的未來。"
+    },
     "label": "事業內容",
     "title": "以三大支柱描繪\n款待的未來",
     "description": "以在醫療與照護領域培養的「支持人心」信念為基石，透過酒店開發、品牌引進、FC營運管理三大事業，重新定義五星級邸宅級體驗。",
     "learnMore": "了解更多"
   },
   "portfolio": {
+    "meta": {
+      "title": "作品集 | dhp hospitality",
+      "description": "奈良春日 鹿之屋——被千年之森環抱的獨一無二邸宅體驗。"
+    },
     "label": "旗艦項目",
     "title": "奈良春日 鹿之屋",
     "tagline": "被千年之森環抱的邸宅記憶",
@@ -34,6 +42,10 @@
     "experience": "每間客房均可眺望春日山原始林絕景"
   },
   "about": {
+    "meta": {
+      "title": "公司概況 | dhp hospitality",
+      "description": "dhp hospitality 股份有限公司的公司概況。從醫療到款待的嶄新境界。"
+    },
     "label": "公司概況",
     "title": "卓越傳承",
     "heritageTitle": "從醫療到極致款待",
@@ -44,6 +56,10 @@
     "leadership": "管理團隊"
   },
   "contact": {
+    "meta": {
+      "title": "聯繫我們 | dhp hospitality",
+      "description": "歡迎就酒店開發、品牌引進、FC營運管理合作事宜與我們聯繫。"
+    },
     "label": "聯繫我們",
     "title": "合作夥伴\n諮詢",
     "description": "歡迎就酒店開發、品牌引進、FC營運管理相關事宜與我們聯繫。",
@@ -71,5 +87,104 @@
     "privacy": "隱私政策",
     "terms": "服務條款",
     "company": "公司概況"
+  },
+  "privacy": {
+    "meta": {
+      "title": "隱私政策 | dhp hospitality",
+      "description": "dhp hospitality 股份有限公司的隱私政策。了解我們如何處理您的個人資訊。"
+    },
+    "label": "法律資訊",
+    "title": "隱私政策",
+    "lastUpdated": "最後更新日期：2025年12月1日",
+    "intro": "dhp hospitality 股份有限公司（以下簡稱「本公司」）認為保護個人資訊是一項重要責任，特此制定本隱私政策。",
+    "section1Title": "1. 個人資訊的收集",
+    "section1Body": "本公司可能在以下情況下收集個人資訊：\n・透過聯繫表單提交的諮詢\n・服務申請\n・活動及研討會報名\n\n收集的資訊可能包括您的姓名、公司名稱、電子郵件地址及電話號碼。",
+    "section2Title": "2. 使用目的",
+    "section2Body": "收集的個人資訊將用於以下目的：\n・回覆諮詢\n・提供及改善服務\n・新服務及活動的通知\n・遵守相關法規",
+    "section3Title": "3. 向第三方提供",
+    "section3Body": "除法律要求外，本公司不會在未經同意的情況下向第三方提供個人資訊。",
+    "section4Title": "4. 資訊安全",
+    "section4Body": "本公司採取適當的安全措施，以維護個人資訊的準確性，防止未經授權的存取、遺失、損壞、竄改或洩漏。",
+    "section5Title": "5. 聯繫窗口",
+    "section5Body": "有關個人資訊處理的諮詢，請透過本公司的聯繫表單與我們聯繫。"
+  },
+  "terms": {
+    "meta": {
+      "title": "服務條款 | dhp hospitality",
+      "description": "dhp hospitality 股份有限公司的網站服務條款。"
+    },
+    "label": "法律資訊",
+    "title": "服務條款",
+    "lastUpdated": "最後更新日期：2025年12月1日",
+    "intro": "本服務條款（以下簡稱「本條款」）規定了 dhp hospitality 股份有限公司（以下簡稱「本公司」）提供的網站使用條件。",
+    "section1Title": "1. 適用範圍",
+    "section1Body": "本條款適用於使用本公司網站的所有用戶。使用本網站即視為同意本條款。",
+    "section2Title": "2. 知識產權",
+    "section2Body": "本公司網站上的所有內容（文字、圖片、設計、標誌等）的著作權及知識產權歸本公司或合法權利人所有。未經授權的複製、轉載或分發均被禁止。",
+    "section3Title": "3. 禁止行為",
+    "section3Body": "以下行為被禁止：\n・違反法律或公共秩序的行為\n・侵害本公司或第三方權利的行為\n・妨礙網站運營的行為\n・未經授權的存取或其企圖",
+    "section4Title": "4. 免責聲明",
+    "section4Body": "本公司盡力確保網站資訊的準確性和完整性，但不作任何保證。對因使用本網站而產生的損害，本公司不承擔任何責任。",
+    "section5Title": "5. 條款變更",
+    "section5Body": "本公司在認為必要時，可不經事先通知修改本條款。修改後的條款自在網站上公佈之時起生效。"
+  },
+  "serviceDetail": {
+    "meta": {
+      "hotelDev": {
+        "title": "酒店開發事業 | dhp hospitality",
+        "description": "從選址到設計、施工、營運。透過一貫式酒店開發創造獨一無二的空間。"
+      },
+      "brandAttraction": {
+        "title": "品牌引進事業 | dhp hospitality",
+        "description": "交涉並引進國內外一流酒店品牌。透過最佳品牌配對實現項目價值最大化。"
+      },
+      "fcManagement": {
+        "title": "FC營運管理事業 | dhp hospitality",
+        "description": "透過加盟方式進行酒店營運管理。實現可持續收益與極致賓客體驗。"
+      }
+    },
+    "backToServices": "返回事業內容",
+    "approach": "方法論",
+    "strengths": "優勢",
+    "cta": "聯繫我們",
+    "hotelDev": {
+      "headline": "編織土地的故事，\n創造獨一無二的酒店",
+      "lead": "從選址到設計、施工、營運。透過一貫式的開發流程，創造出根植於每個地方精髓的獨一無二空間。",
+      "approach1Title": "選址與企劃",
+      "approach1Body": "徹底分析選址潛力。深入了解地域的歷史、文化和自然環境，構建專屬於該地的概念。",
+      "approach2Title": "設計與施工管理",
+      "approach2Body": "與頂尖建築師和設計師合作，將概念具現於空間中。追求每一個細節的品質，創造觸動五感的環境。",
+      "approach3Title": "營運與品牌塑造",
+      "approach3Body": "著眼於開業後營運策略的全方位規劃。從第一天起就實現可持續的價值創造。",
+      "strength1": "在醫療與照護領域培養的「支持人心」思想",
+      "strength2": "從選址到營運的一貫式開發能力",
+      "strength3": "編織地域故事的概念設計"
+    },
+    "brandAttraction": {
+      "headline": "將世界一流品牌，\n引進日本舞台",
+      "lead": "透過與全球頂級酒店品牌的交涉與引進，以最佳品牌配對將項目價值最大化。",
+      "approach1Title": "品牌調研",
+      "approach1Body": "持續研究全球酒店市場。累積為每個項目選擇最佳品牌的洞察力。",
+      "approach2Title": "交涉與配對",
+      "approach2Body": "與品牌總部直接交涉，展示項目魅力的同時，為雙方爭取最優條件。",
+      "approach3Title": "簽約與開業支援",
+      "approach3Body": "支援加盟合約與管理合約的締結。從簽約到開業持續提供一貫的指導。",
+      "strength1": "與全球酒店品牌的豐富網絡",
+      "strength2": "將項目價值最大化的交涉能力",
+      "strength3": "從簽約到盛大開業的一貫支援體制"
+    },
+    "fcManagement": {
+      "headline": "以確實的營運力，\n創造可持續價值",
+      "lead": "透過加盟方式進行酒店營運管理。憑藉累積的專業知識與獨特營運標準，實現可持續收益與極致賓客體驗。",
+      "approach1Title": "營運設計",
+      "approach1Body": "根據每家酒店的特性設計最佳營運體制。實現效率與真正款待的平衡。",
+      "approach2Title": "品質管理與培訓",
+      "approach2Body": "基於獨有品質標準維護並提升服務品質。透過員工培訓計劃，確保始終如一的卓越服務。",
+      "approach3Title": "收益優化",
+      "approach3Body": "運用收益管理方法論優化營收。以數據驅動策略支援可持續的事業營運。",
+      "strength1": "獨有的營運標準與品質管理體系",
+      "strength2": "透過員工培訓計劃確保服務品質的一貫性",
+      "strength3": "數據驅動的收益優化方法論"
+    }
   }
 }

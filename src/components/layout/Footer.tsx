@@ -26,7 +26,7 @@ export default function Footer({ locale }: { locale: string }) {
             <span className="label-text text-neutral-600">Navigation</span>
             <nav className="flex flex-col gap-3">
               <a
-                href={`/${locale}/services`}
+                href={`/${locale}/about`}
                 className="body-sm text-neutral-400 transition-colors hover:text-cream"
               >
                 {t("company")}
@@ -51,13 +51,13 @@ export default function Footer({ locale }: { locale: string }) {
             <span className="label-text text-neutral-600">Legal</span>
             <nav className="flex flex-col gap-3">
               <a
-                href="#"
+                href={`/${locale}/privacy`}
                 className="body-sm text-neutral-400 transition-colors hover:text-cream"
               >
                 {t("privacy")}
               </a>
               <a
-                href="#"
+                href={`/${locale}/terms`}
                 className="body-sm text-neutral-400 transition-colors hover:text-cream"
               >
                 {t("terms")}
