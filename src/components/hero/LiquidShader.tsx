@@ -33,7 +33,7 @@ export default function LiquidShader({ onComplete }: LiquidShaderProps) {
       uResolution: {
         value: new THREE.Vector2(window.innerWidth, window.innerHeight),
       },
-      uColor: { value: new THREE.Color(0xf5ede4) },
+      uColor: { value: new THREE.Color(0xffffff) },
     };
 
     const geometry = new THREE.PlaneGeometry(2, 2);
@@ -48,7 +48,7 @@ export default function LiquidShader({ onComplete }: LiquidShaderProps) {
     scene.add(mesh);
 
     const startTime = Date.now();
-    const duration = 2800;
+    const duration = 1800;
     let animationId: number;
 
     const animate = () => {

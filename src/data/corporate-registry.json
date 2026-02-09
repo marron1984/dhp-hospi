@@ -18,9 +18,9 @@
     },
     "established": "2012-09",
     "headquarters": {
-      "ja": "大阪市中央区",
-      "en": "Chuo-ku, Osaka",
-      "zh-TW": "大阪市中央區"
+      "ja": "〒541-0058 大阪府大阪市中央区南久宝寺町四丁目5番17号 アップウェル船場 2F",
+      "en": "Upwell Semba 2F, 4-5-17 Minami-Kyuhoji-machi, Chuo-ku, Osaka 541-0058",
+      "zh-TW": "〒541-0058 大阪府大阪市中央區南久寶寺町四丁目5番17號 Upwell船場 2F"
     },
     "leadership": [
       {
@@ -42,9 +42,45 @@
           "zh-TW": "取締役（董事）"
         },
         "name": {
-          "ja": "河原 和夫",
+          "ja": "共田 政世",
+          "en": "Masayo Tomoda",
+          "zh-TW": "共田 政世"
+        }
+      },
+      {
+        "role": {
+          "ja": "取締役",
+          "en": "Director",
+          "zh-TW": "取締役（董事）"
+        },
+        "name": {
+          "ja": "河原 一男",
           "en": "Kazuo Kawahara",
-          "zh-TW": "河原 和夫"
+          "zh-TW": "河原 一男"
+        }
+      },
+      {
+        "role": {
+          "ja": "取締役",
+          "en": "Director",
+          "zh-TW": "取締役（董事）"
+        },
+        "name": {
+          "ja": "吉田 俊輔",
+          "en": "Shunsuke Yoshida",
+          "zh-TW": "吉田 俊輔"
+        }
+      },
+      {
+        "role": {
+          "ja": "執行役員",
+          "en": "Executive Officer",
+          "zh-TW": "執行役員"
+        },
+        "name": {
+          "ja": "田邊 裕之",
+          "en": "Hiroyuki Tanabe",
+          "zh-TW": "田邊 裕之"
         }
       }
     ],

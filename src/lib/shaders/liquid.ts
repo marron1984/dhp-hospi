@@ -69,20 +69,20 @@ export const fragmentShader = `
     float threshold = uProgress * 2.8 - 0.8;
     float edge = smoothstep(threshold - 0.15, threshold + 0.05, combinedNoise);
 
-    // Warm cream base with depth variation
+    // Pure white base with subtle depth
     vec3 baseColor = uColor;
-    vec3 warmTint = uColor * 0.88 + vec3(0.04, 0.02, -0.01);
-    vec3 finalColor = mix(warmTint, baseColor, 0.5 + 0.5 * noise1);
+    vec3 softTint = uColor * 0.95;
+    vec3 finalColor = mix(softTint, baseColor, 0.5 + 0.5 * noise1);
 
-    // Burnished gold edge glow
+    // White edge glow
     float edgeGlow = smoothstep(threshold - 0.12, threshold, combinedNoise)
                    - smoothstep(threshold, threshold + 0.12, combinedNoise);
-    finalColor += vec3(0.69, 0.55, 0.34) * edgeGlow * 3.0;
+    finalColor += vec3(1.0, 1.0, 1.0) * edgeGlow * 2.0;
 
-    // Warm highlight spark along dissolve edge
+    // Bright spark along dissolve edge
     float spark = smoothstep(threshold - 0.03, threshold, combinedNoise)
                 - smoothstep(threshold, threshold + 0.03, combinedNoise);
-    finalColor += vec3(1.0, 0.92, 0.78) * spark * 2.0;
+    finalColor += vec3(1.0, 1.0, 1.0) * spark * 1.5;
 
     // Gentle pulsating warmth
     float pulse = 1.0 + sin(t * 3.0) * 0.03;
