@@ -41,9 +41,7 @@
     "established": "設立",
     "establishedValue": "2012年9月",
     "headquarters": "本社所在地",
-    "headquartersValue": "大阪市中央区",
-    "ceo": "代表取締役",
-    "director": "取締役"
+    "leadership": "役員"
   },
   "contact": {
     "label": "お問い合わせ",

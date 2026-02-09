@@ -48,7 +48,7 @@ export default function LiquidShader({ onComplete }: LiquidShaderProps) {
     scene.add(mesh);
 
     const startTime = Date.now();
-    const duration = 1800;
+    const duration = 1200;
     let animationId: number;
 
     const animate = () => {

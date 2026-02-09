@@ -191,27 +191,37 @@ export default function AboutSection() {
               </div>
             </div>
 
-            {/* Corporate Stats */}
-            <div ref={statsRef} className="grid grid-cols-2 gap-px border border-neutral-800/50">
-              <div className="p-6 border-b border-r border-neutral-800/50">
-                <span className="label-text text-neutral-600">{t("established")}</span>
-                <p className="heading-sm text-cream mt-2">{t("establishedValue")}</p>
+            {/* Corporate Info */}
+            <div ref={statsRef} className="border border-neutral-800/50">
+              {/* Established & Address */}
+              <div className="grid grid-cols-2 gap-px">
+                <div className="p-6 border-b border-r border-neutral-800/50">
+                  <span className="label-text text-neutral-600">{t("established")}</span>
+                  <p className="heading-sm text-cream mt-2">{t("establishedValue")}</p>
+                </div>
+                <div className="p-6 border-b border-neutral-800/50">
+                  <span className="label-text text-neutral-600">{t("headquarters")}</span>
+                  <p className="body-sm text-cream mt-2 leading-relaxed">
+                    {corporation.headquarters[locale as keyof typeof corporation.headquarters]}
+                  </p>
+                </div>
               </div>
-              <div className="p-6 border-b border-neutral-800/50">
-                <span className="label-text text-neutral-600">{t("headquarters")}</span>
-                <p className="heading-sm text-cream mt-2">{t("headquartersValue")}</p>
-              </div>
-              <div className="p-6 border-r border-neutral-800/50">
-                <span className="label-text text-neutral-600">{t("ceo")}</span>
-                <p className="heading-sm text-cream mt-2">
-                  {corporation.leadership[0].name[locale as keyof typeof corporation.leadership[0]["name"]]}
-                </p>
-              </div>
+
+              {/* Leadership */}
               <div className="p-6">
-                <span className="label-text text-neutral-600">{t("director")}</span>
-                <p className="heading-sm text-cream mt-2">
-                  {corporation.leadership[1].name[locale as keyof typeof corporation.leadership[1]["name"]]}
-                </p>
+                <span className="label-text text-neutral-600 mb-4 block">{t("leadership")}</span>
+                <div className="grid gap-3">
+                  {corporation.leadership.map((member, i) => (
+                    <div key={i} className="flex items-baseline gap-4">
+                      <span className="label-text text-neutral-500 min-w-[5.5rem] shrink-0">
+                        {member.role[locale as keyof typeof member.role]}
+                      </span>
+                      <span className="body-sm text-cream">
+                        {member.name[locale as keyof typeof member.name]}
+                      </span>
+                    </div>
+                  ))}
+                </div>
               </div>
             </div>
           </div>
