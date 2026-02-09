@@ -142,10 +142,11 @@ export default function ServicePillars() {
 
         {/* Service Cards */}
         <div ref={cardsRef} className="grid gap-px md:grid-cols-3">
-          {pillars.map((pillar) => (
-            <div
+          {pillars.map((pillar, index) => (
+            <a
               key={pillar.id}
-              className="group relative overflow-hidden border border-neutral-800/50 p-8 md:p-10 transition-all duration-700 hover:border-accent/30 hover:bg-walnut-mid/30"
+              href={`/${locale}/services/${pillar.id}`}
+              className="group relative overflow-hidden border border-neutral-800/50 p-8 md:p-10 transition-all duration-700 hover:border-accent/30 hover:bg-walnut-mid/30 block"
               data-cursor
               data-cursor-text={t("learnMore")}
             >
@@ -160,7 +161,7 @@ export default function ServicePillars() {
 
                 {/* Number */}
                 <span className="label-text text-neutral-700 mb-4 block">
-                  0{pillars.indexOf(pillar) + 1}
+                  0{index + 1}
                 </span>
 
                 {/* Title */}
@@ -192,7 +193,7 @@ export default function ServicePillars() {
                   </svg>
                 </div>
               </div>
-            </div>
+            </a>
           ))}
         </div>
       </div>
