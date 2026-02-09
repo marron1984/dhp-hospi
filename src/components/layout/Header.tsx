@@ -12,13 +12,18 @@ const localeLabels: Record<string, string> = {
   "zh-TW": "繁體中文",
 };
 
+const localeShortLabels: Record<string, string> = {
+  ja: "JP",
+  en: "EN",
+  "zh-TW": "繁",
+};
+
 export default function Header({ locale }: { locale: string }) {
   const t = useTranslations("nav");
   const pathname = usePathname();
   const router = useRouter();
   const headerRef = useRef<HTMLElement>(null);
   const [isMenuOpen, setIsMenuOpen] = useState(false);
-  const [isLangOpen, setIsLangOpen] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
 
   useEffect(() => {
@@ -42,7 +47,6 @@ export default function Header({ locale }: { locale: string }) {
     const segments = pathname.split("/");
     segments[1] = newLocale;
     router.push(segments.join("/"));
-    setIsLangOpen(false);
   };
 
   const navItems = [
@@ -88,47 +92,26 @@ export default function Header({ locale }: { locale: string }) {
             </a>
           ))}
 
-          {/* Language Switcher */}
-          <div className="relative">
-            <button
-              onClick={() => setIsLangOpen(!isLangOpen)}
-              className="label-text flex items-center gap-1.5 text-neutral-400 transition-colors hover:text-cream"
-              aria-label={t("language")}
-            >
-              {locale.toUpperCase()}
-              <svg
-                width="10"
-                height="6"
-                viewBox="0 0 10 6"
-                fill="none"
-                className={`transition-transform duration-300 ${
-                  isLangOpen ? "rotate-180" : ""
-                }`}
-              >
-                <path
-                  d="M1 1L5 5L9 1"
-                  stroke="currentColor"
-                  strokeWidth="1.2"
-                />
-              </svg>
-            </button>
-            {isLangOpen && (
-              <div className="absolute right-0 top-full mt-3 min-w-[140px] border border-neutral-800 bg-walnut-mid/95 backdrop-blur-md">
-                {routing.locales.map((loc) => (
-                  <button
-                    key={loc}
-                    onClick={() => switchLocale(loc)}
-                    className={`block w-full px-4 py-2.5 text-left text-xs tracking-wider transition-colors ${
-                      loc === locale
-                        ? "text-accent"
-                        : "text-neutral-400 hover:text-cream hover:bg-walnut-soft/50"
-                    }`}
-                  >
-                    {localeLabels[loc]}
-                  </button>
-                ))}
+          {/* Language Switcher — inline buttons */}
+          <div className="flex items-center gap-1 border border-neutral-700/50 rounded-sm px-1 py-0.5">
+            {routing.locales.map((loc, i) => (
+              <div key={loc} className="flex items-center">
+                {i > 0 && (
+                  <span className="text-neutral-700 mx-0.5 select-none">|</span>
+                )}
+                <button
+                  onClick={() => switchLocale(loc)}
+                  className={`px-2 py-1 text-[0.65rem] font-medium tracking-wider transition-all duration-300 rounded-sm ${
+                    loc === locale
+                      ? "bg-accent/15 text-accent"
+                      : "text-neutral-500 hover:text-cream"
+                  }`}
+                  aria-label={localeLabels[loc]}
+                >
+                  {localeShortLabels[loc]}
+                </button>
               </div>
-            )}
+            ))}
           </div>
         </nav>
 
@@ -169,20 +152,26 @@ export default function Header({ locale }: { locale: string }) {
                 {t(item.key)}
               </a>
             ))}
-            <div className="mt-8 flex gap-6">
-              {routing.locales.map((loc) => (
-                <button
-                  key={loc}
-                  onClick={() => {
-                    switchLocale(loc);
-                    setIsMenuOpen(false);
-                  }}
-                  className={`label-text transition-colors ${
-                    loc === locale ? "text-accent" : "text-neutral-500"
-                  }`}
-                >
-                  {loc.toUpperCase()}
-                </button>
+            <div className="mt-10 flex items-center gap-2 border border-neutral-700/50 rounded-sm px-2 py-1">
+              {routing.locales.map((loc, i) => (
+                <div key={loc} className="flex items-center">
+                  {i > 0 && (
+                    <span className="text-neutral-700 mx-1 select-none">|</span>
+                  )}
+                  <button
+                    onClick={() => {
+                      switchLocale(loc);
+                      setIsMenuOpen(false);
+                    }}
+                    className={`px-3 py-1.5 text-sm font-medium tracking-wider transition-all duration-300 rounded-sm ${
+                      loc === locale
+                        ? "bg-accent/15 text-accent"
+                        : "text-neutral-500 hover:text-cream"
+                    }`}
+                  >
+                    {localeLabels[loc]}
+                  </button>
+                </div>
               ))}
             </div>
           </nav>
